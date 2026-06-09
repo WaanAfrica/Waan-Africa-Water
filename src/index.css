@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradient3D {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,4 +48,11 @@ body {
 ::selection {
   background: rgba(23, 183, 213, 0.28);
   color: #082D3F;
+}
+
+.navbar-3d-gradient {
+  background: linear-gradient(-45deg, #082D3F, #0a4fa8, #1554d1, #17B7D5, #0a4fa8, #082D3F);
+  background-size: 400% 400%;
+  animation: gradient3D 8s ease infinite;
+  position: relative;
 }

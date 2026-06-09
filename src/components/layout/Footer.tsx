@@ -14,8 +14,8 @@ export const Footer = () => {
             <div className="mb-3 flex items-center gap-3">
               <img src="/favicon.jpg" alt="Wan Afrika Logo" className="w-12 h-12 rounded-lg object-cover shadow-lg ring-2 ring-primary-cyan" />
               <div>
-                <h3 className="font-bold text-lg">Wan Afrika</h3>
-                <p className="text-xs text-primary-200">Traders</p>
+                <h3 className="font-bold text-base">WAN AFRIKA TRADERS</h3>
+                <p className="text-xs text-primary-200">Water Solutions</p>
               </div>
             </div>
             <p className="mb-3 text-sm leading-relaxed text-primary-100">Reliable water treatment, irrigation, pumps, pipes and valves for Africa.</p>
