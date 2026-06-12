@@ -21,8 +21,10 @@ import { SectionHeader } from '../../components/common/SectionHeader';
 import { ProductCard } from '../../components/products/ProductCard';
 import { ProductCarousel } from '../../components/common/ProductCarousel';
 import { CTASection } from '../../components/common/CTASection';
+import { Testimonials } from '../../components/common/Testimonials';
 import { useCatalogue } from '../../hooks/useCatalogue';
 import { productService } from '../../services/productService';
+import { testimonials } from '../../data/testimonials';
 import type { Product } from '../../types';
 
 export const Home = () => {
@@ -31,12 +33,12 @@ export const Home = () => {
   const { addItem } = useCatalogue();
 
   useEffect(() => {
-    const loadFeaturedProducts = async () => {
-      const featured = await productService.getFeaturedProducts();
-      setProducts(featured);
+    const loadMostAdmiredProducts = async () => {
+      const admired = await productService.getMostAdmiredProducts();
+      setProducts(admired);
       setLoading(false);
     };
-    loadFeaturedProducts();
+    loadMostAdmiredProducts();
   }, []);
 
   const handleAddToCatalogue = (product: Product) => {
@@ -209,13 +211,13 @@ export const Home = () => {
       {/* Product Carousel Section */}
       <ProductCarousel />
 
-      <section className="py-12 md:py-20 lg:py-24">
+      <section className="bg-light-secondary py-12 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Product Categories"
             subtitle="Explore our comprehensive range of water solutions"
           />
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-5">
             {categories.map((category, idx) => (
               <motion.div
                 key={category.name}
@@ -223,15 +225,15 @@ export const Home = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: idx * 0.05, duration: 0.5 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="cursor-pointer rounded-xl overflow-hidden transition-all duration-500 hover:shadow-2xl group relative"
+                whileHover={{ y: -6 }}
+                className="cursor-pointer rounded-lg overflow-hidden transition-all duration-500 hover:shadow-lg group relative"
                 style={{
                   background: 'linear-gradient(135deg, #e0f7ff 0%, #bff0ff 50%, #a8e6ff 100%)',
                   boxShadow: '0 8px 16px rgba(15, 169, 228, 0.3), inset 0 1px 0 rgba(255,255,255,0.6), 0 0 20px rgba(13, 110, 253, 0.1)'
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-blue-400/10 pointer-events-none" />
-                <div className="relative w-full h-40 sm:h-48 overflow-hidden bg-gradient-to-b from-cyan-100 to-blue-100">
+                <div className="relative w-full h-32 sm:h-40 overflow-hidden bg-gradient-to-b from-cyan-100 to-blue-100">
                   <img 
                     src={category.image} 
                     alt={category.name}
@@ -239,8 +241,8 @@ export const Home = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-transparent to-transparent" />
                 </div>
-                <div className="p-4 sm:p-6 relative z-10 bg-gradient-to-b from-transparent to-blue-50/50">
-                  <p className="text-xs font-semibold text-blue-900 sm:text-sm">{category.name}</p>
+                <div className="p-3 sm:p-4 relative z-10 bg-gradient-to-b from-transparent to-blue-50/50">
+                  <p className="text-xs font-semibold text-blue-900">{category.name}</p>
                 </div>
               </motion.div>
             ))}
@@ -278,7 +280,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 lg:py-24">
+      <section className="bg-light-secondary py-12 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Industries We Serve"
@@ -312,6 +314,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <Testimonials testimonials={testimonials} />
 
       <CTASection
         title="Ready to Transform Your Water Solutions?"

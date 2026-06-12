@@ -781,14 +781,14 @@ export const products: Product[] = [
 
 export const productCategories = [
   { id: 'all', label: 'All Products' },
-  { id: 'water-treatment', label: 'Water Treatment' },
+  { id: 'water-treatment', label: 'Water Treatment Equipment' },
   { id: 'pumps', label: 'Pumps' },
-  { id: 'hdpe-pipes', label: 'HDPE Pipes' },
-  { id: 'pvc-upvc', label: 'PVC & UPVC' },
-  { id: 'ppr', label: 'PPR' },
-  { id: 'cpvc-fittings', label: 'CPVC Fittings' },
-  { id: 'valves', label: 'Valves' },
-  { id: 'irrigation', label: 'Irrigation' },
-  { id: 'parts-accessories', label: 'Parts & Accessories' },
+  { id: 'ppr', label: 'PPR Pipes and Fittings' },
+  { id: 'pvc-upvc', label: 'PVC or High-Pressure pipes and fittings' },
+  { id: 'hdpe-pipes', label: 'HDPE Pipes and Fittings' },
+  { id: 'cpvc-fittings', label: 'CPVC and Fabricated Fittings' },
+  { id: 'valves', label: 'Valves Category' },
+  { id: 'irrigation', label: 'Irrigation Equipment' },
+  { id: 'parts-accessories', label: 'Water Storage Solutions' },
 ];
 

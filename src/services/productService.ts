@@ -67,5 +67,30 @@ export const productService = {
       }, 100);
     });
   },
+
+  // Get most admired/popular products
+  async getMostAdmiredProducts(): Promise<Product[]> {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        // Return curated selection of featured products by ID
+        const productIds = [
+          'hdpe-004',  // HDPE Ball Valve Advanced
+          'wt-005',    // Reverse Osmosis Undersink System
+          'pump-005',  // Centrifugal Pump Irrigation
+          'irr-007',   // Rain Hose for Irrigation Standard
+          'ppr-004',   // PPR Pipes Standard
+          'meter-004', // Super Meter Half Size
+          'pvc-005',   // PVC Fittings Complete Set
+          'ppr-005',   // PPR Fittings Professional
+        ];
+        
+        const admired = productIds
+          .map(id => products.find(p => p.id === id))
+          .filter(p => p !== undefined) as Product[];
+        
+        resolve(admired);
+      }, 100);
+    });
+  },
 };
 

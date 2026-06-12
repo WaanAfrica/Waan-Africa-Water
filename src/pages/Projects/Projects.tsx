@@ -58,7 +58,7 @@ export const Projects = () => {
       />
 
       {/* Projects Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="bg-light-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Project Gallery"
