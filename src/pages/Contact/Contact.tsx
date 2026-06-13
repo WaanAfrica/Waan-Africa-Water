@@ -4,6 +4,7 @@ import { HeroSection } from "../../components/common/HeroSection";
 import { SectionHeader } from "../../components/common/SectionHeader";
 import { ContactForm } from "../../components/common/ContactForm";
 import { contactService } from "../../services/contactService";
+import { CONTACT_INFO } from "../../constants/contact";
 import type { ContactFormData } from "../../types";
 import { motion } from "framer-motion";
 import {
@@ -32,19 +33,19 @@ export const Contact = () => {
     {
       icon: FaPhone,
       title: "Phone",
-      value: "+234 700 000 0000",
-      link: "tel:+234700000000",
+      value: CONTACT_INFO.phone.calls,
+      link: `tel:${CONTACT_INFO.phone.calls}`,
     },
     {
       icon: FaEnvelope,
       title: "Email",
-      value: "info@wanafrika.com",
-      link: "mailto:info@wanafrika.com",
+      value: CONTACT_INFO.email,
+      link: `mailto:${CONTACT_INFO.email}`,
     },
     {
       icon: FaMapPin,
       title: "Address",
-      value: "Lagos, Nigeria",
+      value: "Nairobi, Kenya",
       link: "#",
     },
   ];
@@ -181,10 +182,10 @@ export const Contact = () => {
                   24/7 support available for emergency water issues
                 </p>
                 <a
-                  href="tel:+234700000001"
+                  href={`tel:${CONTACT_INFO.phone.emergency}`}
                   className="inline-block bg-gradient-to-r from-primary-blue to-primary-cyan text-white px-6 py-2 rounded-lg font-bold hover:shadow-lg transition-shadow"
                 >
-                  +234 700 000 0001
+                  {CONTACT_INFO.phone.emergency}
                 </a>
               </motion.div>
             </motion.div>
