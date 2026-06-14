@@ -334,23 +334,25 @@ export const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
+              className="group relative overflow-visible rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-cyan-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-cyan-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
               
-              <div className="flex flex-col md:flex-row h-full">
-                {/* Image Section */}
-                <div className="relative w-full md:w-2/5 flex-shrink-0 overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100 h-72 md:h-auto">
-                  <img
-                    src="/About/C.E.O.jpeg"
-                    alt="Wan Afrika CEO"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent" />
+              <div className="flex flex-col items-center md:flex-row md:items-stretch px-6 pt-8 md:pt-6 md:px-8 pb-6 md:pb-8 gap-6 md:gap-8">
+                {/* Circular Image Section */}
+                <div className="relative flex-shrink-0 w-40 h-40 md:w-48 md:h-48">
+                  <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100 shadow-xl">
+                    <img
+                      src="/About/C.E.O.jpeg"
+                      alt="Wan Afrika CEO"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-900/10 via-transparent to-transparent" />
                 </div>
                 
                 {/* Content Section */}
-                <div className="relative z-10 flex flex-col justify-between p-6 md:p-8 w-full md:w-3/5 bg-white">
+                <div className="relative z-10 flex flex-col justify-center flex-1 text-center md:text-left">
                   <div>
                     <h3 className="text-2xl font-bold text-dark-primary mb-1">
                       Wan Afrika CEO
@@ -377,23 +379,25 @@ export const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
+              className="group relative overflow-visible rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 via-transparent to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 via-transparent to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
               
-              <div className="flex flex-col md:flex-row h-full">
-                {/* Image Section */}
-                <div className="relative w-full md:w-2/5 flex-shrink-0 overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 h-72 md:h-auto order-first md:order-last">
-                  <img
-                    src="/About/C.E.O Vintech Nexus Solutions.jpg"
-                    alt="Vintech Nexus Solutions CEO"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent" />
+              <div className="flex flex-col items-center md:flex-row-reverse md:items-stretch px-6 pt-8 md:pt-6 md:px-8 pb-6 md:pb-8 gap-6 md:gap-8">
+                {/* Circular Image Section */}
+                <div className="relative flex-shrink-0 w-40 h-40 md:w-48 md:h-48">
+                  <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 shadow-xl">
+                    <img
+                      src="/About/C.E.O Vintech Nexus Solutions.jpg"
+                      alt="Vintech Nexus Solutions CEO"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-900/10 via-transparent to-transparent" />
                 </div>
                 
                 {/* Content Section */}
-                <div className="relative z-10 flex flex-col justify-between p-6 md:p-8 w-full md:w-3/5 bg-white">
+                <div className="relative z-10 flex flex-col justify-center flex-1 text-center md:text-left">
                   <div>
                     <h3 className="text-2xl font-bold text-dark-primary mb-1">
                       Vintech Nexus Solutions
