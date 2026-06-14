@@ -801,7 +801,7 @@ export const products: Product[] = [
     category: 'water-treatment',
     description: 'Comprehensive range of essential water treatment accessories designed to enhance and maintain water purification systems. This collection includes replacement filters, connectors, valves, tubing, and specialized components for optimal system performance. Perfect for upgrades and replacements, water treatment accessories ensure your system operates at peak efficiency while extending equipment lifespan and maintaining superior water quality.',
     shortDescription: 'Maintenance & replacement parts',
-    image: '/images/water treatment accessories.jpeg',
+    image: '/images/Water treatment accessories 1.jpeg',
     features: ['Multiple components', 'Quality parts', 'Easy replacement', 'System compatible']
   },
   {
