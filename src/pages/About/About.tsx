@@ -388,7 +388,7 @@ export const About = () => {
                 <div className="relative flex-shrink-0 w-40 h-40 md:w-48 md:h-48">
                   <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 shadow-xl">
                     <img
-                      src="/About/C.E.O Vintech Nexus Solutions.jpg"
+                      src="/About/C.E.O%20Vintech%20Nexus%20Solutions.jpg"
                       alt="Vintech Nexus Solutions CEO"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
