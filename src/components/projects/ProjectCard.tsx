@@ -25,13 +25,24 @@ export const ProjectCard = ({ project, index = 0, onViewDetails }: ProjectCardPr
     >
       <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-blue-400/20 pointer-events-none rounded-xl" />
       
-      {/* Image */}
+      {/* Media - Video or Image */}
       <div className="relative h-48 w-full overflow-hidden bg-gradient-to-b from-cyan-100 to-blue-100 sm:h-52">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+        {project.video ? (
+          <video
+            src={project.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-transparent to-transparent" />
         <div className="absolute top-4 left-4 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-blue-700 shadow-lg backdrop-blur border border-blue-200">
           {project.category.replace('-', ' ').toUpperCase()}

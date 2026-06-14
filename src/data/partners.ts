@@ -3,55 +3,29 @@ export interface Partner {
   name: string;
   logo?: string;
   category: string;
+  description?: string;
 }
 
 export const partners: Partner[] = [
   {
     id: '1',
-    name: 'Aqua Systems',
-    logo: '/partners/aqua-systems.png',
-    category: 'Water Treatment Equipment',
+    name: 'Vintech Nexus Solutions',
+    logo: '/About/Vintech Nexus Solutions.png',
+    category: 'Technology & Development',
+    description: 'Software development and technology solutions for water management systems',
   },
   {
     id: '2',
-    name: 'Hydrotech Solutions',
-    logo: '/partners/hydrotech.png',
-    category: 'Pump Suppliers',
+    name: 'Darange Borehole Services',
+    logo: '/About/Darange borehole services.jpeg',
+    category: 'Borehole & Drilling',
+    description: 'Expert borehole drilling and water well services',
   },
   {
     id: '3',
-    name: 'EcoFlow Industries',
-    logo: '/partners/ecoflow.png',
-    category: 'Irrigation Systems',
-  },
-  {
-    id: '4',
-    name: 'PipeCorp Africa',
-    logo: '/partners/pipecorp.png',
-    category: 'Pipe Manufacturers',
-  },
-  {
-    id: '5',
-    name: 'Valve Tech International',
-    logo: '/partners/valve-tech.png',
-    category: 'Industrial Valves',
-  },
-  {
-    id: '6',
-    name: 'Global Water Services',
-    logo: '/partners/global-water.png',
-    category: 'Water Logistics',
-  },
-  {
-    id: '7',
-    name: 'Sustainable Water Ltd',
-    logo: '/partners/sustainable-water.png',
-    category: 'Sustainability Partner',
-  },
-  {
-    id: '8',
-    name: 'African Tech Innovations',
-    logo: '/partners/african-tech.png',
-    category: 'Technology Partner',
+    name: 'Matrix Water Ltd',
+    logo: '/About/Matrix Water Ltd.jpeg',
+    category: 'Water Treatment',
+    description: 'Advanced water treatment and purification solutions',
   },
 ];

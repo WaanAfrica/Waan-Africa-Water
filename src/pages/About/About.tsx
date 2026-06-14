@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { HeroSection } from "../../components/common/HeroSection";
 import { SectionHeader } from "../../components/common/SectionHeader";
 import { CTASection } from "../../components/common/CTASection";
+import { Partners } from "../../components/common/Partners";
 import {
   FaHeart,
   FaBullseye,
@@ -12,6 +13,7 @@ import {
   FaUsers,
   FaAward,
 } from "react-icons/fa6";
+import { partners } from "../../data/partners";
 
 export const About = () => {
   const [stats, setStats] = useState({
@@ -316,6 +318,107 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      {/* CEO Messages Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            title="Leadership & Partnership"
+            subtitle="Meet the visionaries driving our mission"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Wan Afrika CEO */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-cyan-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              <div className="flex flex-col md:flex-row h-full">
+                {/* Image Section */}
+                <div className="relative w-full md:w-2/5 flex-shrink-0 overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100 h-72 md:h-auto">
+                  <img
+                    src="/About/C.E.O.jpeg"
+                    alt="Wan Afrika CEO"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent" />
+                </div>
+                
+                {/* Content Section */}
+                <div className="relative z-10 flex flex-col justify-between p-6 md:p-8 w-full md:w-3/5 bg-white">
+                  <div>
+                    <h3 className="text-2xl font-bold text-dark-primary mb-1">
+                      Wan Afrika CEO
+                    </h3>
+                    <p className="text-primary-blue font-semibold mb-4 text-sm uppercase tracking-wide">
+                      Chief Executive Officer
+                    </p>
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
+                      "At Wan Afrika Traders, we believe that access to clean, reliable water is a fundamental right. Our commitment to innovation and excellence drives us to deliver solutions that transform communities and businesses across Africa."
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-blue-100">
+                    <p className="text-sm text-gray-500 italic">
+                      Leading Wan Afrika Traders with vision, integrity, and passion for water solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Vintech CEO */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 via-transparent to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              <div className="flex flex-col md:flex-row h-full">
+                {/* Image Section */}
+                <div className="relative w-full md:w-2/5 flex-shrink-0 overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 h-72 md:h-auto order-first md:order-last">
+                  <img
+                    src="/About/C.E.O Vintech Nexus Solutions.jpg"
+                    alt="Vintech Nexus Solutions CEO"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent" />
+                </div>
+                
+                {/* Content Section */}
+                <div className="relative z-10 flex flex-col justify-between p-6 md:p-8 w-full md:w-3/5 bg-white">
+                  <div>
+                    <h3 className="text-2xl font-bold text-dark-primary mb-1">
+                      Vintech Nexus Solutions
+                    </h3>
+                    <p className="text-primary-blue font-semibold mb-4 text-sm uppercase tracking-wide">
+                      Technology Partner & Developer
+                    </p>
+                    <p className="text-gray-600 text-base leading-relaxed mb-4">
+                      "Through innovative technology and software development, Vintech Nexus Solutions empowers water management systems with intelligent solutions. We partner with Wan Afrika Traders to bring cutting-edge digital transformation to Africa's water sector."
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-cyan-100">
+                    <p className="text-sm text-gray-500 italic">
+                      Delivering technology excellence and digital innovation for water solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <Partners partners={partners} />
 
       {/* CTA Section */}
       <CTASection

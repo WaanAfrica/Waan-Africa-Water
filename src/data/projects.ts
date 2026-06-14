@@ -7,6 +7,8 @@ export const projects: Project[] = [
     category: 'irrigation',
     description: 'Successfully installed a comprehensive drip irrigation system for a 500-hectare commercial farm in rural Nigeria. The system reduced water consumption by 65% and increased crop yield by 40%.',
     image: '/images/Irrigation sprinkler.jpeg',
+    video: '/projects/Large-Scale Irrigation Farm.mp4',
+    galleryVideos: ['/projects/Large-Scale Irrigation Farm 1.mp4'],
     location: 'Kaduna State, Nigeria',
     completionDate: '2024-06-15',
     galleryImages: [
@@ -21,6 +23,7 @@ export const projects: Project[] = [
     category: 'water-treatment',
     description: 'Designed and installed a state-of-the-art water treatment facility for a major manufacturing company. The system processes 10,000 liters per hour with 99.9% contaminant removal.',
     image: '/images/FRP Tank for water treatment.jpeg',
+    video: '/projects/Multi-Stage Water Purification System.mp4',
     location: 'Lagos, Nigeria',
     completionDate: '2024-05-20',
     galleryImages: [
@@ -33,7 +36,12 @@ export const projects: Project[] = [
     title: 'Community Borehole Network',
     category: 'borehole',
     description: 'Installed boreholes and water distribution systems for 15 rural communities. Provides clean water access to over 50,000 residents.',
-    image: '/images/HDPE pipes.jpeg',
+    image: '/projects/Community Borehole Network.jpeg',
+    galleryVideos: [
+      '/projects/Community Borehole drilling.mp4',
+      '/projects/Community Borehole pumping.mp4',
+      '/projects/Community School Borehole.mp4'
+    ],
     location: 'Northern Region, Nigeria',
     completionDate: '2024-03-10',
   },
@@ -57,6 +65,7 @@ export const projects: Project[] = [
     category: 'irrigation',
     description: 'Implemented precision drip and micro-sprinkler irrigation system for a high-tech greenhouse facility. Increased productivity by 35% with automated moisture monitoring.',
     image: '/images/Sprinkler 1.jpeg',
+    video: '/projects/Vegetable Greenhouse Irrigation.mp4',
     location: 'Enugu State, Nigeria',
     completionDate: '2024-02-28',
   },
@@ -71,10 +80,11 @@ export const projects: Project[] = [
   },
   {
     id: 'proj-007',
-    title: 'Agricultural Cooperative Water Supply',
+    title: 'Estate Irrigation Project',
     category: 'irrigation',
-    description: 'Designed water supply and irrigation infrastructure for a 200-member agricultural cooperative. System serves 5,000 hectares with automated distribution.',
+    description: 'Designed and implemented a modern irrigation system for a residential estate community. Automated watering schedule optimized water usage while maintaining landscape beauty.',
     image: '/images/Rain gun 2.jpeg',
+    video: '/projects/Estate irrigation project.mp4',
     location: 'Oyo State, Nigeria',
     completionDate: '2023-12-20',
   },
@@ -83,7 +93,7 @@ export const projects: Project[] = [
     title: 'Residential Complex Water Network',
     category: 'commercial',
     description: 'Complete water infrastructure for a 2,000-unit residential complex. Includes treatment, storage, and distribution systems with real-time monitoring.',
-    image: '/images/HDPE Flanged adaptor.jpeg',
+    image: '/projects/Residential Complex Water Network.jpeg',
     location: 'Lagos State, Nigeria',
     completionDate: '2023-11-10',
     galleryImages: [

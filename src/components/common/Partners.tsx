@@ -52,7 +52,12 @@ export const Partners = ({ partners }: PartnersProps) => {
                 <p className="font-semibold text-sm text-dark-primary line-clamp-2 mb-1">
                   {partner.name}
                 </p>
-                <p className="text-xs text-slate-500">{partner.category}</p>
+                <p className="text-xs text-slate-500 mb-2">{partner.category}</p>
+                {partner.description && (
+                  <p className="text-xs text-gray-600 line-clamp-2">
+                    {partner.description}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}

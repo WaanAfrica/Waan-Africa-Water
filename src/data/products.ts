@@ -241,6 +241,24 @@ export const products: Product[] = [
     image: '/images/Plastic Air release valve.jpeg',
     features: ['Lightweight', 'Cost-effective', 'Chemical resistant', 'Easy maintenance']
   },
+  {
+    id: 'valve-021',
+    name: 'Air Release Valve Double Orifice',
+    category: 'valves',
+    description: 'Dual-orifice air release valve for enhanced air venting in large-diameter water pipelines.',
+    shortDescription: 'Double orifice air valve',
+    image: '/images/Air release valve double orifice.jpeg',
+    features: ['Dual orifice design', 'Enhanced venting', 'High efficiency', 'Industrial grade']
+  },
+  {
+    id: 'valve-022',
+    name: 'Pressure Release Valve Advanced',
+    category: 'valves',
+    description: 'Advanced pressure release valve with precision adjustment for critical industrial water systems.',
+    shortDescription: 'Advanced pressure valve',
+    image: '/images/Pressure release valve - valves.jpeg',
+    features: ['Precision adjustment', 'Safety protection', 'Industrial application', 'Reliable operation']
+  },
 
   // Butterfly Valves
   {
@@ -785,6 +803,96 @@ export const products: Product[] = [
     shortDescription: 'Maintenance & replacement parts',
     image: '/images/water treatment accessories.jpeg',
     features: ['Multiple components', 'Quality parts', 'Easy replacement', 'System compatible']
+  },
+  {
+    id: 'acc-008',
+    name: 'Water Treatment Accessories Advanced',
+    category: 'water-treatment',
+    description: 'Advanced water treatment accessory collection featuring premium components for system optimization and maintenance. Includes specialized connectors, replacement parts, tubing, and auxiliary equipment designed for professional and industrial applications.',
+    shortDescription: 'Premium treatment parts',
+    image: '/images/Water treatment accessories 1.jpeg',
+    features: ['Premium quality', 'Professional grade', 'System optimization', 'Easy maintenance']
+  },
+  {
+    id: 'acc-009',
+    name: 'Pressure Gauge',
+    category: 'parts-accessories',
+    description: 'Accurate pressure gauge for monitoring system pressure in water distribution and treatment systems.',
+    shortDescription: 'Pressure gauge',
+    image: '/images/Pressure gauge.jpeg',
+    features: ['Accurate reading', 'Durable construction', 'Easy installation', 'Reliable measurement']
+  },
+  {
+    id: 'fitting-011',
+    name: 'VJ Coupling HDPE Premium',
+    category: 'hdpe-pipes',
+    description: 'Premium HDPE VJ coupling for reliable and efficient pipe joining in water distribution systems.',
+    shortDescription: 'VJ coupling HDPE premium',
+    image: '/images/Vj coupling HDPE.jpeg',
+    features: ['Premium quality', 'Easy assembly', 'Reliable seal', 'Durable connection']
+  },
+  {
+    id: 'irr-008',
+    name: 'Rain Gun Type 1',
+    category: 'irrigation',
+    description: 'Professional rain gun for medium-range irrigation coverage in agricultural and landscaping applications.',
+    shortDescription: 'Rain gun type 1',
+    image: '/images/Rain gun 1.jpeg',
+    features: ['Medium range', 'Good coverage', 'Adjustable', 'Durable design']
+  },
+  {
+    id: 'irr-009',
+    name: 'Rain Gun Type 2',
+    category: 'irrigation',
+    description: 'Heavy-duty rain gun with extended range for large-scale irrigation and landscape watering.',
+    shortDescription: 'Rain gun type 2',
+    image: '/images/Rain gun 2.jpeg',
+    features: ['Extended range', 'Large area coverage', 'Adjustable angle', 'Heavy-duty build']
+  },
+  {
+    id: 'irr-010',
+    name: 'Sprinkler Main Standard',
+    category: 'irrigation',
+    description: 'Standard-grade sprinkler designed for reliable water distribution in residential and commercial landscaping.',
+    shortDescription: 'Sprinkler main standard',
+    image: '/images/Sprinkler main.jpeg',
+    features: ['Standard performance', 'Reliable', 'Easy installation', 'Weather resistant']
+  },
+  {
+    id: 'meter-006',
+    name: 'Flanged Water Meter Standard',
+    category: 'water-treatment',
+    description: 'Standard flanged water meter for accurate measurement in large-capacity water systems.',
+    shortDescription: 'Flanged water meter standard',
+    image: '/images/Flanged water meter.jpeg',
+    features: ['Flanged design', 'Accurate measurement', 'Industrial rated', 'Easy reading']
+  },
+  {
+    id: 'meter-007',
+    name: 'Flanged Water Meters Metric',
+    category: 'water-treatment',
+    description: 'Metric-sized flanged water meter for industrial water measurement and monitoring.',
+    shortDescription: 'Flanged water meters metric',
+    image: '/images/Flanged water meters m.jpeg',
+    features: ['Metric sized', 'High accuracy', 'Industrial grade', 'Durable']
+  },
+  {
+    id: 'fitting-012',
+    name: 'Flanged Pipe 8-inch',
+    category: 'pvc-upvc',
+    description: '8-inch flanged pipe for large-diameter water distribution and industrial applications.',
+    shortDescription: 'Flanged pipe 8-inch',
+    image: '/images/Flanged pipe 8.jpeg',
+    features: ['8-inch size', 'Large diameter', 'Flanged connection', 'Industrial capacity']
+  },
+  {
+    id: 'irr-011',
+    name: 'Valve Category Display',
+    category: 'valves',
+    description: 'Complete display and reference collection showcasing the full range of valve categories available for water management systems.',
+    shortDescription: 'Valve category collection',
+    image: '/images/Valves Category.jpeg',
+    features: ['Complete variety', 'Reference guide', 'All types', 'Visual catalog']
   },
 ];
 

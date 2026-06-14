@@ -37,7 +37,9 @@ export interface Project {
   category: ProjectCategory;
   description: string;
   image: string;
+  video?: string;
   galleryImages?: string[];
+  galleryVideos?: string[];
   location?: string;
   completionDate?: string;
 }
