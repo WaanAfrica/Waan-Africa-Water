@@ -328,7 +328,7 @@ export const About = () => {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* Wan Afrika CEO */}
+            {/* Waan Afrika CEO */}}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -344,7 +344,7 @@ export const About = () => {
                   <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 shadow-xl flex items-center justify-center">
                     <img
                       src="/About/C.E.O.jpeg"
-                      alt="Wan Afrika CEO"
+                      alt="Waan Afrika CEO"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -355,7 +355,7 @@ export const About = () => {
                 <div className="relative z-10 flex flex-col justify-center flex-1 text-center md:text-left">
                   <div>
                     <h3 className="text-2xl font-bold text-dark-primary mb-1">
-                      Wan Afrika CEO
+                      Waan Afrika CEO
                     </h3>
                     <p className="text-primary-blue font-semibold mb-4 text-sm uppercase tracking-wide">
                       Chief Executive Officer
