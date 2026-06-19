@@ -99,7 +99,7 @@ export const Checkout = () => {
     return (
       <>
         <Helmet>
-          <title>Checkout - Wan Afrika Traders</title>
+          <title>Checkout - Waan Afrika Water Solution</title>
         </Helmet>
         <HeroSection title="Checkout" subtitle="Complete your quote request" />
         <section className="py-12 md:py-20 lg:py-24">
@@ -123,7 +123,7 @@ export const Checkout = () => {
     return (
       <>
         <Helmet>
-          <title>Quote Submitted - Wan Afrika Traders</title>
+          <title>Quote Submitted - Waan Afrika Water Solution</title>
         </Helmet>
         <HeroSection title="Quote Request Submitted" subtitle="Thank you for your order" />
         <section className="py-14 md:py-24">
@@ -133,7 +133,7 @@ export const Checkout = () => {
               animate={{ scale: 1 }}
               className="mb-6"
             >
-              <img src="/favicon.jpg" alt="Wan Afrika Logo" className="h-24 w-24 rounded-xl shadow-lg mx-auto mb-4" />
+              <img src="/favicon.jpg" alt="Waan Afrika Water Solution Logo" className="h-24 w-24 rounded-xl shadow-lg mx-auto mb-4" />
               <FaCircleCheck className="mx-auto text-7xl text-primary-cyan" />
             </motion.div>
             <h2 className="mb-4 text-3xl font-bold text-dark-primary sm:text-4xl">Thank You!</h2>
@@ -165,7 +165,7 @@ export const Checkout = () => {
   return (
     <>
       <Helmet>
-        <title>Checkout - Wan Afrika Traders</title>
+        <title>Checkout - Waan Afrika Water Solution</title>
         <meta name="description" content="Complete your quote request for water solutions." />
       </Helmet>
 

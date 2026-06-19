@@ -51,20 +51,20 @@ export const Contact = () => {
   ];
 
   const businessHours = [
-    { day: "Monday - Friday", time: "8:00 AM - 5:00 PM WAT" },
-    { day: "Saturday", time: "9:00 AM - 2:00 PM WAT" },
+    { day: "Monday - Friday", time: "8:00 AM - 5:00 PM EAT" },
+    { day: "Saturday", time: "9:00 AM - 2:00 PM EAT" },
     { day: "Sunday", time: "Closed" },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Contact Us - Wan Afrika Traders</title>
+        <title>Contact Us - Waan Afrika Water Solution</title>
         <meta
           name="description"
-          content="Get in touch with Wan Afrika Traders. Send us a message or call our team for water solutions."
+          content="Get in touch with Waan Afrika Water Solution. Send us a message or call our team for water solutions."
         />
-        <meta property="og:title" content="Contact Us - Wan Afrika Traders" />
+        <meta property="og:title" content="Contact Us - Waan Afrika Water Solution" />
       </Helmet>
 
       {/* Hero Section */}
@@ -206,7 +206,7 @@ export const Contact = () => {
               height="100%"
               frameBorder="0"
               style={{ border: 0 }}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0924504089826!2d3.3754754!3d6.6430563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ee9a40c4f4f4f4f%3A0x4f4f4f4f4f4f4f4f!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.821819230903!2d36.8219462!3d-1.3270368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1d3264dd7c1f%3A0x1234567890abcdef!2sIndustrial%20Area%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1234567890"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

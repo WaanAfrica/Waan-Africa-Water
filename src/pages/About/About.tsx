@@ -26,7 +26,7 @@ export const About = () => {
   useEffect(() => {
     // Animate counter
     const targetStats = {
-      yearsInBusiness: 15,
+      yearsInBusiness: 3,
       productsOffered: 200,
       clientsSatisfied: 5000,
       projectsCompleted: 500,
@@ -80,12 +80,12 @@ export const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Wan Afrika Traders - Our Story & Mission</title>
+        <title>About Waan Afrika Water Solution - Our Story & Mission</title>
         <meta
           name="description"
-          content="Learn about Wan Afrika Traders, our mission, vision, and commitment to providing complete water solutions for Africa."
+          content="Learn about Waan Afrika Water Solution, our mission, vision, and commitment to providing complete water solutions for Africa."
         />
-        <meta property="og:title" content="About Wan Afrika Traders" />
+        <meta property="og:title" content="About Waan Afrika Water Solution" />
         <meta
           property="og:description"
           content="Complete water solutions provider for Africa"
@@ -94,8 +94,8 @@ export const About = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="About Wan Afrika Traders"
-        subtitle="Pioneering water solutions across Africa since 2009"
+        title="About Waan Afrika Water Solution"
+        subtitle="Pioneering water solutions across Africa since 2023"
         backgroundImage="/Hero baner.png"
       />
 
@@ -113,9 +113,9 @@ export const About = () => {
                 Our Journey
               </h2>
               <p className="text-gray-600 text-lg mb-4">
-                Founded in 2009, Wan Afrika Traders has emerged as a leading
-                provider of water solutions across Africa. With over 15 years of
-                industry experience, we have successfully served thousands of
+                Founded in 2023, Waan Afrika Water Solution has emerged as a leading
+                provider of water solutions across Africa. With cutting-edge
+                industry expertise, we have successfully served thousands of
                 clients across various sectors.
               </p>
               <p className="text-gray-600 text-lg mb-4">
@@ -336,16 +336,16 @@ export const About = () => {
               viewport={{ once: true }}
               className="group relative overflow-visible rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-cyan-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 via-transparent to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
               
               <div className="flex flex-col items-center md:flex-row md:items-stretch px-6 pt-8 md:pt-6 md:px-8 pb-6 md:pb-8 gap-6 md:gap-8">
                 {/* Circular Image Section */}
                 <div className="relative flex-shrink-0 w-40 h-40 md:w-48 md:h-48">
-                  <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100 shadow-xl flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-cyan-100 to-blue-100 shadow-xl flex items-center justify-center">
                     <img
                       src="/About/C.E.O.jpeg"
                       alt="Wan Afrika CEO"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-900/10 via-transparent to-transparent" />
@@ -361,12 +361,12 @@ export const About = () => {
                       Chief Executive Officer
                     </p>
                     <p className="text-gray-600 text-base leading-relaxed mb-4">
-                      "At Wan Afrika Traders, we believe that access to clean, reliable water is a fundamental right. Our commitment to innovation and excellence drives us to deliver solutions that transform communities and businesses across Africa."
+                      "At Waan Afrika Water Solution, we believe that access to clean, reliable water is a fundamental right. Our commitment to innovation and excellence drives us to deliver solutions that transform communities and businesses across Africa."
                     </p>
                   </div>
-                  <div className="pt-4 border-t border-blue-100">
+                  <div className="pt-4 border-t border-cyan-100">
                     <p className="text-sm text-gray-500 italic">
-                      Leading Wan Afrika Traders with vision, integrity, and passion for water solutions.
+                      Leading Waan Afrika Water Solution with vision, integrity, and passion for water solutions.
                     </p>
                   </div>
                 </div>
@@ -406,7 +406,7 @@ export const About = () => {
                       Technology Partner & Developer
                     </p>
                     <p className="text-gray-600 text-base leading-relaxed mb-4">
-                      "Through innovative technology and software development, Vintech Nexus Solutions empowers water management systems with intelligent solutions. We partner with Wan Afrika Traders to bring cutting-edge digital transformation to Africa's water sector."
+                      "Through innovative technology and software development, Vintech Nexus Solutions empowers water management systems with intelligent solutions. We partner with Waan Afrika Water Solution to bring cutting-edge digital transformation to Africa's water sector."
                     </p>
                   </div>
                   <div className="pt-4 border-t border-cyan-100">

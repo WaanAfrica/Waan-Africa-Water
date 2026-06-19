@@ -5,8 +5,10 @@ import { SectionHeader } from "../../components/common/SectionHeader";
 import { ProjectCard } from "../../components/projects/ProjectCard";
 import { CTASection } from "../../components/common/CTASection";
 import { projectService } from "../../services/projectService";
+import { productService } from "../../services/productService";
 import { projectCategories } from "../../data/projects";
 import type { Project } from "../../types";
+import type { Product } from "../../types";
 import { motion } from "framer-motion";
 
 export const Projects = () => {
@@ -15,6 +17,7 @@ export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const loadProjects = async () => {
@@ -37,17 +40,35 @@ export const Projects = () => {
 
   const handleViewDetails = (project: Project) => {
     setSelectedProject(project);
+    loadRelatedProducts(project.category);
+  };
+
+  const loadRelatedProducts = async (projectCategory: string) => {
+    const categoryMapping: Record<string, string[]> = {
+      "irrigation": ["irrigation", "pumps", "hdpe-pipes"],
+      "borehole": ["pumps", "valves", "parts-accessories"],
+      "commercial": ["water-treatment", "pumps", "valves"],
+      "residential": ["water-treatment", "hdpe-pipes", "sanitary-appliances"],
+    };
+
+    const productCategories = categoryMapping[projectCategory] || ["water-treatment", "pumps"];
+    const allProducts = await productService.getProducts();
+    const related = allProducts.filter((p) =>
+      productCategories.some((cat) => p.category === cat)
+    ).slice(0, 6);
+    
+    setRelatedProducts(related);
   };
 
   return (
     <>
       <Helmet>
-        <title>Projects - Wan Afrika Traders</title>
+        <title>Projects - Waan Afrika Water Solution</title>
         <meta
           name="description"
           content="Explore our successful water solution projects across Africa including irrigation, water treatment, borehole, and commercial installations."
         />
-        <meta property="og:title" content="Projects - Wan Afrika Traders" />
+        <meta property="og:title" content="Projects - Waan Afrika Water Solution" />
       </Helmet>
 
       {/* Hero Section */}
@@ -145,6 +166,18 @@ export const Projects = () => {
               className="w-full h-96 object-cover"
             />
 
+            {/* Project Video */}
+            {selectedProject.video && (
+              <div className="w-full bg-gray-900">
+                <video
+                  src={selectedProject.video}
+                  controls
+                  autoPlay
+                  className="w-full h-96 object-cover"
+                />
+              </div>
+            )}
+
             {/* Content */}
             <div className="p-8">
               <div className="mb-4 flex items-center justify-between">
@@ -180,10 +213,30 @@ export const Projects = () => {
                 </p>
               </div>
 
-              {/* Gallery */}
+              {/* Gallery Videos */}
+              {selectedProject.galleryVideos &&
+                selectedProject.galleryVideos.length > 0 && (
+                  <div className="mb-6">
+                    <h3 className="text-xl font-bold text-dark-primary mb-4">
+                      Project Videos
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {selectedProject.galleryVideos.map((video, idx) => (
+                        <video
+                          key={idx}
+                          src={video}
+                          controls
+                          className="w-full h-48 object-cover rounded-lg bg-gray-900"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+              {/* Gallery Images */}
               {selectedProject.galleryImages &&
                 selectedProject.galleryImages.length > 0 && (
-                  <div>
+                  <div className="mb-6">
                     <h3 className="text-xl font-bold text-dark-primary mb-4">
                       Project Gallery
                     </h3>
@@ -199,6 +252,34 @@ export const Projects = () => {
                     </div>
                   </div>
                 )}
+
+              {/* Related Products */}
+              {relatedProducts.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-dark-primary mb-4">
+                    Related Products Used
+                  </h3>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {relatedProducts.map((product) => (
+                      <div key={product.id} className="rounded-lg overflow-hidden bg-gray-100 hover:shadow-lg transition-shadow">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-40 object-cover"
+                        />
+                        <div className="p-3 bg-white">
+                          <p className="text-sm font-semibold text-dark-primary line-clamp-2">
+                            {product.name}
+                          </p>
+                          <p className="text-xs text-gray-500 capitalize">
+                            {product.category.replace("-", " ")}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* CTA */}
               <div className="mt-8">

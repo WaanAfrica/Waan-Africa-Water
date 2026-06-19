@@ -36,12 +36,12 @@ export const Solutions = () => {
   return (
     <>
       <Helmet>
-        <title>Solutions - Wan Afrika Traders</title>
+        <title>Solutions - Waan Afrika Water Solution</title>
         <meta
           name="description"
           content="Discover our comprehensive water solutions including irrigation, treatment, borehole, and industrial water systems."
         />
-        <meta property="og:title" content="Solutions - Wan Afrika Traders" />
+        <meta property="og:title" content="Solutions - Waan Afrika Water Solution" />
       </Helmet>
 
       {/* Hero Section */}

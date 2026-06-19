@@ -12,9 +12,9 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <img src="/favicon.jpg" alt="Wan Afrika Logo" className="w-12 h-12 rounded-lg object-cover shadow-lg ring-2 ring-primary-cyan" />
+              <img src="/favicon.jpg" alt="Waan Afrika Water Solution Logo" className="w-12 h-12 rounded-lg object-cover shadow-lg ring-2 ring-primary-cyan" />
               <div>
-                <h3 className="font-bold text-base">WAN AFRIKA TRADERS</h3>
+                <h3 className="font-bold text-base">WAAN AFRIKA WATER SOLUTION</h3>
                 <p className="text-xs text-primary-200">Water Solutions</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export const Footer = () => {
         </div>
         {/* Copyright */}
         <div className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-primary-100">
-          <p>&copy; {currentYear} Wan Afrika Traders. All rights reserved. Complete Water Solutions for Africa.</p>
+          <p>&copy; {currentYear} Waan Afrika Water Solution. All rights reserved. Complete Water Solutions for Africa.</p>
         </div>
       </div>
     </footer>

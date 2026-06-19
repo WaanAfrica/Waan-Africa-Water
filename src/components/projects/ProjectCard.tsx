@@ -23,10 +23,8 @@ export const ProjectCard = ({ project, index = 0, onViewDetails }: ProjectCardPr
         boxShadow: '0 12px 24px rgba(13, 110, 253, 0.25), inset 0 1px 0 rgba(255,255,255,0.9), 0 0 20px rgba(0, 188, 212, 0.2)'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-blue-400/20 pointer-events-none rounded-xl" />
-      
       {/* Media - Video or Image */}
-      <div className="relative h-48 w-full overflow-hidden bg-gradient-to-b from-cyan-100 to-blue-100 sm:h-52">
+      <div className="relative h-48 w-full overflow-hidden bg-gradient-to-b from-cyan-100 to-blue-100 sm:h-52 flex items-center justify-center">
         {project.video ? (
           <video
             src={project.video}
@@ -35,17 +33,20 @@ export const ProjectCard = ({ project, index = 0, onViewDetails }: ProjectCardPr
             loop
             playsInline
             className="w-full h-full object-cover"
+            preload="metadata"
           />
         ) : (
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-transparent pointer-events-none" />
         <div className="absolute top-4 left-4 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-blue-700 shadow-lg backdrop-blur border border-blue-200">
           {project.category.replace('-', ' ').toUpperCase()}
+          {project.video && ' 🎬'}
         </div>
       </div>
 

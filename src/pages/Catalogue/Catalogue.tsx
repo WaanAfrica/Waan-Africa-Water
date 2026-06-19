@@ -18,7 +18,7 @@ export const Catalogue = () => {
   return (
     <>
       <Helmet>
-        <title>Catalogue - Wan Afrika Traders</title>
+        <title>Catalogue - Waan Afrika Water Solution</title>
         <meta
           name="description"
           content="View and manage your selected products in your catalogue."

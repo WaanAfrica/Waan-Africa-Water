@@ -97,9 +97,9 @@ export const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Wan Afrika Traders - Complete Water Solutions for Africa</title>
+        <title>Waan Afrika Water Solution - Complete Water Solutions for Africa</title>
         <meta name="description" content="Premium water solutions including treatment systems, irrigation equipment, pumps, pipes, and valves." />
-        <meta property="og:title" content="Wan Afrika Traders - Water Solutions" />
+        <meta property="og:title" content="Waan Afrika Water Solution - Water Solutions" />
         <meta property="og:description" content="Complete water solutions for Africa" />
         <meta property="og:type" content="website" />
       </Helmet>

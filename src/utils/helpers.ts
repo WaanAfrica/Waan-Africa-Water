@@ -86,7 +86,7 @@ export const generateEmailMessage = (
 </head>
 <body>
   <div class="header">
-    <h1>Quote Request from Wan Afrika Traders</h1>
+    <h1>Quote Request from Waan Afrika Water Solution</h1>
   </div>
   <div class="container">
     <div class="section">
@@ -111,7 +111,7 @@ export const generateEmailMessage = (
     ` : ''}
     
     <div class="footer">
-      <p>This quote request was submitted through the Wan Afrika Traders website.</p>
+      <p>This quote request was submitted through the Waan Afrika Water Solution website.</p>
     </div>
   </div>
 </body>
